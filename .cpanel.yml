@@ -1,0 +1,15 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/pututudk/public_html/portfolio
+    - /bin/cp -R components $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R files $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R php $DEPLOYPATH
+    - /bin/cp contact.html $DEPLOYPATH
+    - /bin/cp education.html $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp portfolio.html $DEPLOYPATH
+    - /bin/cp skills.html $DEPLOYPATH

@@ -1,0 +1,72 @@
+@import 'reset.css';
+@import "default.css";
+@import "pages.css";
+
+@media screen and (min-width: 992px) {
+    /* layout */
+    main{
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* header */
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header .open-btn{
+        display: none;
+    }
+    .header .close-btn{
+        display: none;
+    }
+    .main-menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: none;
+        transition: 0s;
+
+        justify-content: flex-start;
+        align-items: stretch;
+        background-color: transparent;
+    }
+    .main-menu ul{
+        display: flex;        
+    }
+    .main-menu a{
+        display: inline;
+        color: var(--white-color);
+        font-size: var(--normal-font-size);
+    }
+
+    /* home */
+    .home{
+        display: flex;
+        gap: 16px;
+    }
+    .home >*{
+        width: 50%;
+    }
+    .buttons-cntr{
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+    .button-cntr .download-btn{
+        border: white 1px solid;
+    }
+    .banner-code{
+        display: block;
+        margin-top: 8px;
+    }
+
+    /* skills - education - porftolio*/
+    .skill-card, .education-card, .card{
+        margin-bottom: 4rem;
+    }
+
+    /* contact */
+    .form-container{
+        width: 454px;
+    }
+}

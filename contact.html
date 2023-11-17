@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="You have a website and need to update,fix errors,
+    make changes, expand or maintain it, get in touch with me, a web developer">
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP, MySQL, ASP.NET MVC, WordPress,
+    Laravel, Git GitHub">
+    <title>Web Developer - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/javascript.js"></script>
+    <script src="./components/info-card.js" defer></script>
+    <script src="./js/form-validation.js" defer></script> 
+</head>
+<body>
+    <header class="header">
+        <a href="/">
+            <img src="./images/logo.webp" alt="Logo Pututu Web">                
+        </a>
+        <button id="open-btn" class="open-btn" onclick="test()">Menu</button>
+        <nav id="main-menu" class="main-menu">
+            <button id="close-btn" class="close-btn" onclick="test2()">Close</button>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="./education.html">Education</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a class="active-page" href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact</h1>
+        <section>
+            <p>
+                Feel free to contact me by phone, E-mail or by sending your message with the form below.
+            </p>
+            <div class="card-container">
+                <info-card></info-card>
+            </div>
+            <div class="form-container">
+                <form id="contact-form" class="form" novalidate>        
+                    <fieldset>
+                        <legend>Let's work together</legend>
+            
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text" name="name" pattern=".{2,24}" required>
+                        <output id="name-error-field"></output>
+            
+                        <label for="email">Your E-mail</label>
+                        <input id="email" type="email" name="email" required>
+                        <output id="email-error-field"></output>
+            
+                        <label for="subject">Subject</label>
+                        <input id="subject" type="text" name="subject" pattern=".{2,32}" required>
+                        <output id="subject-error-field"></output>
+            
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" minlength="2" maxlength="512" required></textarea>
+                        <output id="message-error-field"></output>
+            
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </div>                             
+        </section>
+    </main>
+    <footer class="footer">
+        Hector Sullca Huaman - Web Developer - 2024
+    </footer>    
+</body>
+</html>
